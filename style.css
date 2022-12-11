@@ -3,16 +3,27 @@ body {
     height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: 'Oxygen Mono', monospace;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 h1 {
-    background-color: #eee;
+    background-color: gold;
     font-size: 48px;
-    color: #2d2d2d;
+    color: black;
     padding: 1rem;
     width: 100%;
     text-align: center;
+
+    animation: rotate 2s forwards;
 }
+
+@keyframes rotate {
+    to {
+        transform: rotate(315deg);
+    }
+}
+
